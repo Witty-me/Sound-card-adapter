@@ -7,6 +7,6 @@ Supported formats
 -----------------
 * Waveform (.wav)
 * MPEG-4 (.m4a)
-* WMA
+* WMA (.wma)
 
 Recording to MP3 is not supported yet since it requires Windows 8 and I have 7.
