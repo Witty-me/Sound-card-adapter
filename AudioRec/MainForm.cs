@@ -113,7 +113,7 @@ namespace AudioRec
 
 		private void recordTimer_Tick(object sender, EventArgs e)
 		{
-			recordTime.Add(new TimeSpan(0, 0, 1));
+			recordTime.Add(TimeSpan.FromSeconds(1));
 			lblTime.Text = "Time: " + recordTime.ToString();
 		}
 
@@ -123,6 +123,12 @@ namespace AudioRec
 				btnOpenFileLoc.Enabled = true;
 			else
 				btnOpenFileLoc.Enabled = false;
+		}
+
+		private void btnOpenFileLoc_Click(object sender, EventArgs e)
+		{
+			if (System.IO.File.Exists(textOutputFile.Text))
+				System.Diagnostics.Process.Start(textOutputFile.Text);
 		}
 	}
 }

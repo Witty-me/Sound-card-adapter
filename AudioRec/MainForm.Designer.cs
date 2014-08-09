@@ -48,8 +48,8 @@
 			// 
 			// groupDeviceSelection
 			// 
-			this.groupDeviceSelection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.groupDeviceSelection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.groupDeviceSelection.Controls.Add(this.btnFindDevices);
 			this.groupDeviceSelection.Controls.Add(this.btnSelectDevice);
 			this.groupDeviceSelection.Controls.Add(this.listDevices);
@@ -62,8 +62,8 @@
 			// 
 			// btnFindDevices
 			// 
-			this.btnFindDevices.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnFindDevices.Location = new System.Drawing.Point(245, 20);
+			this.btnFindDevices.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnFindDevices.Location = new System.Drawing.Point(6, 137);
 			this.btnFindDevices.Name = "btnFindDevices";
 			this.btnFindDevices.Size = new System.Drawing.Size(105, 23);
 			this.btnFindDevices.TabIndex = 2;
@@ -73,8 +73,8 @@
 			// 
 			// btnSelectDevice
 			// 
-			this.btnSelectDevice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnSelectDevice.Location = new System.Drawing.Point(245, 49);
+			this.btnSelectDevice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnSelectDevice.Location = new System.Drawing.Point(245, 137);
 			this.btnSelectDevice.Name = "btnSelectDevice";
 			this.btnSelectDevice.Size = new System.Drawing.Size(105, 23);
 			this.btnSelectDevice.TabIndex = 1;
@@ -84,14 +84,14 @@
 			// 
 			// listDevices
 			// 
-			this.listDevices.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.listDevices.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.listDevices.HideSelection = false;
-			this.listDevices.Location = new System.Drawing.Point(7, 20);
+			this.listDevices.Location = new System.Drawing.Point(6, 19);
 			this.listDevices.MultiSelect = false;
 			this.listDevices.Name = "listDevices";
-			this.listDevices.Size = new System.Drawing.Size(232, 140);
+			this.listDevices.Size = new System.Drawing.Size(344, 112);
 			this.listDevices.TabIndex = 0;
 			this.listDevices.UseCompatibleStateImageBehavior = false;
 			this.listDevices.View = System.Windows.Forms.View.List;
@@ -149,6 +149,7 @@
 			this.btnOpenFileLoc.TabIndex = 2;
 			this.btnOpenFileLoc.Text = "Open output location";
 			this.btnOpenFileLoc.UseVisualStyleBackColor = true;
+			this.btnOpenFileLoc.Click += new System.EventHandler(this.btnOpenFileLoc_Click);
 			// 
 			// lblTime
 			// 
@@ -184,7 +185,7 @@
 			this.Controls.Add(this.groupDeviceSelection);
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Audio Rec";
+			this.Text = "Audio Recorder";
 			this.groupDeviceSelection.ResumeLayout(false);
 			this.groupOutputFileSelection.ResumeLayout(false);
 			this.groupOutputFileSelection.PerformLayout();
