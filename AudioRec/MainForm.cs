@@ -129,7 +129,7 @@ namespace AudioRec
 				btnSelectDevice.Text = "Selected!";
 				groupDeviceSelection.Enabled = true;
 
-                hello.say();
+                
                 Console.WriteLine("Selected device: {0}", device.ToString());
 			}
 		}
